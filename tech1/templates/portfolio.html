@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!--<link type="text/css" href="{{ MEDIA_URL }}css/stylesheet.css" media="screen,projection" />-->
+    <link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
+</head>
+
+<body>
+    
+
+    <!---Header starts-->
+   <header>
+<!--profile-->
+<div class="profile">
+<img src="{% static 'css/raj.jpg' %}" alt="My image" width="170px" height="200px">
+<!--<img src="/static/raj.jpg" alt="" width="170px" height="200px">-->
+<h1>Jitesh Mohapatra</h1>
+<div class="social-icons">
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/jitesh-mohapatra-2ba94b200"><i class="fa-brands fa-linkedin"></i></a>
+</div>
+
+
+</div>
+<!--Navbar-->
+<nav>
+   
+    <ul>
+        <li><a href="#" class="active"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li><a href="#"><i class="fa-solid fa-user"></i>About Me</a></li>
+        <li><a href="#"><i class="fa-solid fa-briefcase"></i>Portfolio</a></li>
+        <li><a href="#"><i class="fa-solid fa-server"></i>Services</a></li>
+        <li><a href="#"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+    </ul>
+</nav>
+ <!--footer-->
+ <div class="footer">
+    <p>&copy; Copyright 2023<br>Designed By<a href="https://Jitesh.in" target="_blank">Jitesh.in</a></p>
+
+ </div>
+
+
+   </header> 
+   <!--Mobile view toogle-->
+   <i class="fa-solid fa-bars" id="MenuBtn"></i>
+<!--Header end-->
+
+<!--All Body content-->
+<main>
+<!--Home section Start-->
+<section id="home">
+    <div class="home-row">
+        <h1>Hi, This is<br>Jitesh Mohapatra<span>.</span></h1>
+        <p>I'm  a<span class="auto-input"> Web devloper!</span></p><br>
+        <a href="{%static 'css/jitesh mohapatra.pdf' %}" style="font-size:25px;font-weight:600;border-radius:5px;color:whitesmoke;background-color:rgba(64, 224, 208, 0.883);font-style: italic;display:inline-flexbox;">Download resume</a>
+    </div>
+  
+
+
+</section>
+
+
+<!--Home section end-->
+<!--About section start-->
+<section id="about">
+<h1 class="sub-heading">About Me</h1>
+<div class="divider"></div>
+<p>To make a sound position in corporate world and work
+enthusiastically in team to achieve goal of the organization
+with devotion and hard work. I have a proven track record of successful problem-solving and project management. I am looking for an opportunity to use my skills and abilities to make a positive impact on an IT organization.</p>
+<div class="about-col">
+    <!--img col-->
+    <div class="img-col">
+        <img src="{%static 'css/raj.jpg' %}" alt="..." height="420px" width="110px">
+
+    </div>
+    <!--Information-->
+    <div class="info-col">
+<h2>Front-End Devloper!</h2>
+<p>Front-end web development is the development of the graphical user interface of a website, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that website</p>
+<div class="icon-list-col">
+    <!--left side list-->
+    <div class="icon-list">
+        <ul>
+            <li><i class="fa-solid fa-angle-right"></i></li><strong>Birthday:</strong><span>Dec 2000</span></li>
+            <li><i class="fa-solid fa-angle-right"></i></li><strong>Website:</strong><span>www.jitesh.com</span></li>
+            <li><i class="fa-solid fa-angle-right"></i></li><strong>phone:</strong><span>+91 9348998989</span></li>
+            <li><i class="fa-solid fa-angle-right"></i></li><strong>City:</strong><span>Bhubaneswar,odisha</span></li>
+        </ul>
+
+    </div>
+ <!--right side list-->
+ <div class="icon-list">
+    <ul>
+        <li><i class="fa-solid fa-angle-right"></i></li><strong>Age:</strong><span>23</span></li>
+        <li><i class="fa-solid fa-angle-right"></i></li><strong>Degree:</strong><span>Bachelor in science</span></li>
+        <li><i class="fa-solid fa-angle-right"></i></li><strong>Email:</strong><span>jiteshmohapatra2000@gmail.com</span></li>
+        <li><i class="fa-solid fa-angle-right"></i></li><strong>Nationality:</strong><span>Indian</span></li>
+    </ul>
+
+</div>
+
+
+
+
+
+</div>
+    </div>
+</div>
+
+
+<!--About section End-->
+<!------------->
+<!--Facts section Start-->
+<section id="fact">
+<h1 class="sub-heading">Facts</h1>
+<div class="divider"></div>
+<p class="sub-para">A Web Developer is a professional who is responsible for the design and construction of websites. They ensure that sites meet user expectations by ensuring they look good, run smoothly and offer easy access points with no loading issues between pages or error messages.</p>
+<div class="fact-row">
+<!--fact box-1-->
+<div class="fact-box">
+<i class="fa-regular fa-face-smile"></i>
+<strong>50+</strong>
+<p>Happy clients</p>
+
+
+
+</div>
+<!--fact box-2-->
+<div class="fact-box">
+    <i class="fa-regular fa-file-code"></i>
+    <strong>60+</strong>
+    <p>Projects completed</p>
+    
+    
+    
+    </div>
+<!--fact box-3-->
+<div class="fact-box">
+    <i class="fa-solid fa-headset"></i>
+    <strong>24/7</strong>
+    <p>Hours of support</p>
+    
+    
+    
+    </div>
+    <!--fact box-4-->
+<div class="fact-box">
+    <i class="fa-solid fa-clock-rotate-left"></i>
+    <strong>10+</strong>
+    <p>pending orders</p>
+    
+    
+    
+    </div>
+
+
+</div>
+
+</section>
+<!--Facts section end-->
+
+
+</section>
+<!--Typed js for typing effect-->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+</main>
+   <script src="{%static 'css/scripts.js'%}"></script>
+   <!--Font Awesome js file (icon)-->
+   <script src="https://kit.fontawesome.com/aa5f332820.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

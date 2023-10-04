@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .container{
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 80%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+       
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+        }
+        
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <header>
+        <h1>Employee List</h1>
+    </header>
+    <container>
+    <table>
+        <tr>
+            <th>id</th>
+            <th>empno</th>
+            <th>firstname</th>
+            <th>lastname</th>
+            <th>workdepartment</th>
+            <th>phoneno</th>
+            <th>hiredate</th>
+            <th>birthdate</th>
+            <th>salary</th>
+            <th>bonus</th>
+        </tr>
+        {% for employee in employees %}
+            <tr>
+                <td>{{ employee.id}}</td>
+                <td>{{ employee.empno }}</td>
+                <td>{{ employee.firstname }}</td>
+                <td>{{ employee.lastname}}</td>
+                <td>{{ employee.workdepartment}}</td>
+                <td>{{ employee.phoneno}}</td>
+                <td>{{ employee.hiredate}}</td>
+                <td>{{ employee.birthdate}}</td>
+                <td>{{ employee.salary}}</td>
+                <td>{{ employee.bonus}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    </container>
+    <footer>
+        &copy; 2023 Employee Management System
+    </footer>
+</body>
+</html>

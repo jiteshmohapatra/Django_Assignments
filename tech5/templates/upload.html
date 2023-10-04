@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#a1{
+    border: 3px solid blue;
+    margin: 35px;
+    padding: 25px;
+    border-radius: 15px;border-width: 25px;
+    width: 600px;
+    text-align: center;
+    background-color: rgb(157, 255, 71);
+    height: 400px;
+    margin-left: 600px;
+}
+#a2{
+    font-size: 25px;
+    color: green;
+    background-color: thistle;
+    margin: 15px;
+}
+#a3{
+    font-size: 35px;
+    color:rgb(238, 0, 255);
+    background-color: rgb(191, 213, 216);
+    margin: 25px;
+}
+.middle{
+   border: 3px solid orange;
+   border-radius: 15px;
+   border-width: 25px;
+   width: 500px;
+   background-color: aliceblue;
+   margin-left: 30px;
+   margin: 30px;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1 style="color: orange; font-size: 45px; text-align: center;"><ins>Upload file</ins></h1>
+<form method="post" enctype="multipart/form-data" id="a1">
+{%csrf_token%}
+<div class="middle">
+<input type="file" name="document" id="a2">
+<button type="submit" id="a3">Upload File</button>
+{% if url %}
+   <p style="color: red; font-size: 35px; text-align: center;">Uploaded file:<a href="{{url}}">click</a></p>
+{% end if %}
+</div>
+
+</form>
+
+
+</body>
+</html>

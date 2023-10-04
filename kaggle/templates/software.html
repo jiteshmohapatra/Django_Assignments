@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Software Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .container{
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 80%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+       
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+        }
+        
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <header>
+        <h1 style="font-family: 'Times New Roman', Times, serif;">Software Industry Salary Data</h1>
+    </header>
+    <container>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Rating</th>
+            <th>Company</th>
+            <th>Jobtitle</th>
+            <th>Salary</th>
+            <th>Salariesreported</th>
+            <th>Location</th>
+            <th>Employmentstatus</th>
+            <th>Jobroles</th>
+        </tr>
+        {% for software in softwares %}
+            <tr>
+                <td>{{ software.Id}}</td>
+                <td>{{ software.Rating }}</td>
+                <td>{{ software.Company }}</td>
+                <td>{{ software.Jobtitle}}</td>
+                <td>{{ software.Salary}}</td>
+                <td>{{ software.Salariesreported}}</td>
+                <td>{{ software.Location}}</td>
+                <td>{{ software.Employmentstatus}}</td>
+                <td>{{ software.Jobroles}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    </container>
+    <footer>
+        &copy; 2023 Salary Management System
+    </footer>
+</body>
+</html>
